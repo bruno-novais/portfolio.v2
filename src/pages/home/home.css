@@ -8,12 +8,10 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(16px);
-    background-position: center;
-    background-repeat: no-repeat;
     z-index: 1;
-    /* Coloca o conteúdo acima do Three.js */
+    mix-blend-mode: luminosity;
 }
 
 .threejs-container {
@@ -23,17 +21,20 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* Coloca o Three.js atrás do conteúdo */
 }
 
 .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
+    text-align: center;
     width: 100%;
     height: 100%;
     padding: 64px;
     color: var(--color-white);
     font-size: 3rem;
+    filter: drop-shadow(2px 2px 4px #09090970);
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0000007c; */
 }

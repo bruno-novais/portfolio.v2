@@ -1,5 +1,4 @@
 @import '../../App.css';
-@import '../../colors.css';
 
 .navbar_container {
     display: flex;
@@ -7,7 +6,7 @@
     width: 100%;
     height: fit-content;
     padding: 16px;
-    color: var(--color-white);
+    color: var(--color-black);
     font-weight: 300;
     font-size: 1rem;
 }

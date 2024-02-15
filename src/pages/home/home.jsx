@@ -11,7 +11,7 @@ function Home() {
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
-      50,
+      20,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
@@ -26,14 +26,14 @@ function Home() {
     containerRef.current.appendChild(renderer.domElement);
 
     const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshStandardMaterial({ color: "D2D3E0" }); // Materiais padrão para sombras
+    const material = new THREE.MeshStandardMaterial({ color: "#5769E9" }); // Materiais padrão para sombras
     const cube = new THREE.Mesh(geometry, material);
     cube.castShadow = true; // Permite que o cubo projete sombras
     scene.add(cube);
 
     // Adiciona uma luz direcional com sombras
     const light = new THREE.DirectionalLight(0xffffff, 1);
-    light.position.set(-1, 2, 4);
+    light.position.set(1, 2, 4);
     light.castShadow = true; // Permite que a luz projete sombras
     scene.add(light);
 
