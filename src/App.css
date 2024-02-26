@@ -33,6 +33,9 @@ body {
 .page{
   display: flex;
   height: 100dvh;
+  max-height: 100dvh;
   width: 100dvw;
   /* background: var(--color-black); */
+  /* border: 2px solid red; */
+  overflow: hidden;
 }
