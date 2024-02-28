@@ -1,5 +1,8 @@
-// import "../../App.css";
+import "../../App.css";
 import "./top-navbar.css";
+import { IconButton } from '@mui/material';
+import { Phone, UserList, Devices } from "@phosphor-icons/react";
+
 
 function TopNavbar() {
   return (
@@ -7,14 +10,22 @@ function TopNavbar() {
       <div className="navbar_container">
 
         <div className="logo">
-            <p>LOGO</p>
+          <p>Bruno Novais</p>
         </div>
 
         <div className="links">
-            <a href="">About</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
-        </div>  
+          <IconButton href="#about" color="white">
+            <UserList weight="fill" />
+          </IconButton>
+
+          <IconButton href="#" color="white">
+            <Devices weight="fill" />
+          </IconButton>
+
+          <IconButton href="#" color="white">
+            <Phone weight="fill" />
+          </IconButton>
+        </div>
 
       </div>
     </>

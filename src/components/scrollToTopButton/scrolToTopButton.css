@@ -1,0 +1,19 @@
+@import '../../App.css';
+
+.scroll_top {
+    position: fixed;
+    z-index: 2;
+    bottom: 4%;
+    right: 2%;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave na propriedade opacity */
+}
+
+.scroll_top.visible {
+    opacity: 1; /* Visível quando a classe 'visible' é adicionada */
+}
+
+.scroll_top i {
+    color: var(--color-primary);
+
+}
