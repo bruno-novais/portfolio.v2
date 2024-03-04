@@ -1,6 +1,6 @@
 import React from 'react';
 import "./scrolToTopButton.css";
-import { Fab } from '@mui/material';
+import { Fab, Tooltip } from '@mui/material';
 import { CaretUp } from "@phosphor-icons/react";
 
 
@@ -31,9 +31,11 @@ const ScrollToTopButton = () => {
     return (
         <div className={`scroll_top ${visible ? 'visible' : ''}`}>
             {visible && (
-                <Fab color="black" size="small" aria-label="scroll back to top" onClick={scrollToTop}>
+                <Tooltip title="Voltar para o Topo" placement="left">
+                <Fab color="primary" size="small" aria-label="scroll back to top" onClick={scrollToTop}>
                     <CaretUp weight="bold" color='white' size={16} />
                 </Fab>
+                </Tooltip>
             )}
         </div>
     );

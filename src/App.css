@@ -65,3 +65,7 @@ body {
   /* border: 2px solid red; */
   overflow: hidden;
 }
+
+.color {
+  color: var(--color-primary);
+}

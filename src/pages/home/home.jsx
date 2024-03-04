@@ -1,10 +1,10 @@
 import { useRef, useEffect } from "react";
 import "./home.css";
-import TopNavbar from "../../components/top-navbar/top-navbar";
+import TopNavbar from "../../components/topNavbar/topNavbar";
 import * as THREE from "three";
 import { CaretDown } from "@phosphor-icons/react";
 import TypeIt from "typeit-react";
-import { IconButton } from '@mui/material';
+import { IconButton, Tooltip } from "@mui/material";
 
 function Home() {
   const containerRef = useRef(null);
@@ -70,13 +70,13 @@ function Home() {
 
   return (
     <>
-      <div className="page home">
+      <div className="page home" id="home">
         <div className="navabar_container">
           <TopNavbar />
         </div>
 
         <div className="title" id="title">
-          <TypeIt
+          {/* <TypeIt
           options={{
             speed:  50,
             waitUntilVisible: true,
@@ -84,17 +84,18 @@ function Home() {
         >
           Hi, I'm <SuperStrong>Bruno Novais</SuperStrong>👋!<br/>
           Seja Bem-Vindo ao meu Portifólio
-        </TypeIt>
+        </TypeIt> */}
         </div>
 
         <div className="art"></div>
 
         <div className="mouse_btn">
-          <IconButton href="#about" color="white">
-            <CaretDown weight="fill" />
-          </IconButton>
+          <Tooltip title="Sobre Mim">
+            <IconButton href="#about" color="white">
+              <CaretDown weight="fill" />
+            </IconButton>
+          </Tooltip>
         </div>
-
       </div>
     </>
   );

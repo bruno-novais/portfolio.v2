@@ -46,22 +46,20 @@ const theme = createTheme({
         },
       },
     },
-    MuiFab: {
+    MuiPaper: {
       styleOverrides: {
         root: {
-          '&:hover': {
-            backgroundColor: '#5769e9',
-          }
+            backgroundColor: '#bebfca',
         },
       },
     },
-    // MuiPaper: {
-    //   styleOverrides: {
-    //     root: {
-    //         backgroundColor: '#D2D3E0',
-    //     },
-    //   },
-    // },
+    MuiDivider: {
+      styleOverrides: {
+        root: {
+            backgroundColor: '#5768e927',
+        },
+      },
+    },
   },
   typography: {
     fontSize: 12,

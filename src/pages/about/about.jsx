@@ -1,28 +1,131 @@
+import React from "react";
 import "./about.css";
-import { Paper, Box, Button } from "@mui/material";
+import SecondaryNavbar from "../../components/secondaryNavbar/secondaryNavbar";
+import CustomButton from "../../components/customButton/customButton";
+import { Box, IconButton, Tooltip, Divider, Tab, Tabs } from "@mui/material";
+import {
+  Phone,
+  Devices,
+  LinkedinLogo,
+  GithubLogo,
+  InstagramLogo,
+  CaretDown,
+} from "@phosphor-icons/react";
 
 function About() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
     <>
       <div className="page about" id="about">
         <Box className="content_container">
           <div className="about_section">
             <div className="about_header">
-              <span>navbar</span>
+              <SecondaryNavbar />
             </div>
 
             <div className="about_content">
-              <div className="about_content_tilte">about</div>
-              <div className="about_content_text">text about</div>
+              <div className="about_content_tilte">
+                <h2>Bruno Novais</h2>
+              </div>
+              <div className="about_content_text">
+                <h3 className="color">Desenvolvedor Web & Designer</h3>
+                <span>
+                  Desenvolvedor experiente em projetos de sites, aplicativos web
+                  e mobile, com habilidades em UI/UX Design, incluindo edição e
+                  manipulação de imagem, vídeo, animações e modelagem 3D, entre
+                  outras tarefas de design.
+                </span>
+              </div>
+              <div className="about_content_text_topic">
+                <div className="tabs_container">
+                  <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    aria-label="basic tabs example"
+                  >
+                    <Tab className="teste" label="Educação" />
+                    <Tab className="teste" label="Experiências" />
+                  </Tabs>
+                </div>
+                <div className="topic_content">
+                  {value === 0 && (
+                    <>
+                      <div className="topic_option">
+                        <h4>Universidade Senac EAD</h4>
+                        <span>
+                          Análise e Desenvolvimento de Sistemas | 2021 - 2023
+                        </span>
+                      </div>
+                      <div className="topic_option">
+                        <h4>Senac, Guaratinguetá-SP</h4>
+                        <span>Técnico em Computação Gráfica | 2017 - 2018</span>
+                      </div>
+                    </>
+                  )}
+                  {value === 1 && (
+                    <>
+                      <div className="topic_option">
+                        <h4>Empresa XYZ</h4>
+                        <span>Desenvolvedor Full Stack | 2020 - Presente</span>
+                      </div>
+                      <div className="topic_option">
+                        <h4>Empresa XYZ</h4>
+                        <span>Desenvolvedor Full Stack | 2020 - Presente</span>
+                      </div>
+                      <div className="topic_option">
+                        <h4>Empresa XYZ</h4>
+                        <span>Desenvolvedor Full Stack | 2020 - Presente</span>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
             </div>
 
             <div className="about_actions">
-              <Button variant="contained">Teste</Button>
+              <CustomButton href="#home" />
             </div>
           </div>
 
-          <Paper className="photo_section" elevation={3}></Paper>
-          <Paper className="skill_section" elevation={3}></Paper>
+          <div className="photo_section">
+            <div className="photo_section_actions">
+              <Tooltip title="Linkedin" placement="top">
+                <IconButton variant="contained" href="#" target="_blank" color="black">
+                  <LinkedinLogo weight="fill" />
+                </IconButton>
+              </Tooltip>
+
+              <Tooltip title="GitHub" placement="top">
+                <IconButton variant="contained" href="https://github.com/bruno-novais" target="_blank" color="black">
+                  <GithubLogo weight="fill" />
+                </IconButton>
+              </Tooltip>
+
+              <Tooltip title="Instagram" placement="top">
+                <IconButton variant="contained" href="#" target="_blank" color="black">
+                  <InstagramLogo weight="fill" />
+                </IconButton>
+              </Tooltip>
+            </div>
+          </div>
+
+          <div className="skill_section">
+            <h2>skill</h2>
+
+            <div className="skill_item">
+              <div className="skill_icon">
+                <Phone weight="fill" />
+              </div>
+              <div className="skill_name">
+                <span>skill01</span>
+              </div>
+            </div>
+          </div>
         </Box>
       </div>
     </>
