@@ -13,19 +13,19 @@ function SecondaryNavbar() {
 
         <div className="secondary_navbar_links">
         <Tooltip title="Início">
-            <IconButton href="#" color="black">
+            <IconButton href="#" color="white">
               <House weight="fill" />
             </IconButton>
           </Tooltip>
 
           <Tooltip title="Projetos">
-            <IconButton href="#" color="black">
+            <IconButton href="#" color="white">
               <Devices weight="fill" />
             </IconButton>
           </Tooltip>
 
           <Tooltip title="Entre em Contato">
-            <IconButton href="#" color="black">
+            <IconButton href="#" color="white">
               <Phone weight="fill" />
             </IconButton>
           </Tooltip>

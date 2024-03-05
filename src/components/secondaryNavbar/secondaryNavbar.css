@@ -6,12 +6,12 @@
   align-items: center;
   width: 100%;
   height: fit-content;
-  /* background: var(--color-component); */
-  color: var(--color-black);
+  background: var(--color-black);
+  color: var(--color-white);
   padding: 4px 16px;
   border-radius: 100px;
-  /* box-shadow: 2px 2px 6px #00000005; */
-  /* border: 1px solid #b7b8c44a; */
+  box-shadow: 2px 2px 6px #00000005;
+  border: 1px solid #b7b8c44a;
 }
 
 .secondary_navbar_logo {

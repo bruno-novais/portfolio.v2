@@ -10,6 +10,7 @@ import {
   GithubLogo,
   InstagramLogo,
   CaretDown,
+  Dot,
 } from "@phosphor-icons/react";
 
 function About() {
@@ -95,19 +96,34 @@ function About() {
           <div className="photo_section">
             <div className="photo_section_actions">
               <Tooltip title="Linkedin" placement="top">
-                <IconButton variant="contained" href="#" target="_blank" color="black">
+                <IconButton
+                  variant="contained"
+                  href="https://www.linkedin.com/in/bruno-novais-381975191/"
+                  target="_blank"
+                  color="black"
+                >
                   <LinkedinLogo weight="fill" />
                 </IconButton>
               </Tooltip>
 
               <Tooltip title="GitHub" placement="top">
-                <IconButton variant="contained" href="https://github.com/bruno-novais" target="_blank" color="black">
+                <IconButton
+                  variant="contained"
+                  href="https://github.com/bruno-novais"
+                  target="_blank"
+                  color="black"
+                >
                   <GithubLogo weight="fill" />
                 </IconButton>
               </Tooltip>
 
               <Tooltip title="Instagram" placement="top">
-                <IconButton variant="contained" href="#" target="_blank" color="black">
+                <IconButton
+                  variant="contained"
+                  href="#"
+                  target="_blank"
+                  color="black"
+                >
                   <InstagramLogo weight="fill" />
                 </IconButton>
               </Tooltip>
@@ -115,14 +131,36 @@ function About() {
           </div>
 
           <div className="skill_section">
-            <h2>skill</h2>
+            <h2>Habilidades</h2>
 
-            <div className="skill_item">
-              <div className="skill_icon">
-                <Phone weight="fill" />
+            <div className="skill_topic_container">
+              <Dot weight="duotone" size={64} />
+              <div className="skill_topic">
+                <div className="topic_header">
+                  <h4>Programação</h4>
+                </div>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>React Native</li>
+                <li>PHP</li>
+                <li>SQL</li>
               </div>
-              <div className="skill_name">
-                <span>skill01</span>
+            </div>
+
+            <div className="skill_topic_container">
+              <Dot weight="duotone" size={64} />
+              <div className="skill_topic">
+                <div className="topic_header">
+                  <h4>Design</h4>
+                </div>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe After Effects</li>
+                <li>Adobe Premiere Pro</li>
+                <li>Autodesk 3ds Max</li>
+                <li>Autodesk Autocad</li>
+                <li>ZBrush</li>
+                <li>Figma</li>
               </div>
             </div>
           </div>
