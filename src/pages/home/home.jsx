@@ -1,10 +1,10 @@
-import { useRef, useEffect } from "react";
 import "./home.css";
-import TopNavbar from "../../components/topNavbar/topNavbar";
-import * as THREE from "three";
-import { CaretDown } from "@phosphor-icons/react";
-import TypeIt from "typeit-react";
+import { useRef, useEffect } from "react";
 import { IconButton, Tooltip } from "@mui/material";
+import { CaretDown } from "@phosphor-icons/react";
+import * as THREE from "three";
+import TypeIt from "typeit-react";
+import TopNavbar from "../../components/topNavbar/topNavbar";
 
 function Home() {
   const containerRef = useRef(null);

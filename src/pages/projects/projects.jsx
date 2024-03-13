@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import "./projects.css";
 import { CaretDown } from "@phosphor-icons/react";
 import { Chip, Box, IconButton, Tooltip } from "@mui/material";
+import Menu from "../../components/menu/menu";
 
 function Projects() {
   const [selectedTab, setSelectedTab] = useState("programador");
@@ -33,9 +34,10 @@ function Projects() {
           <Box sx={{ height: "100vh" }}>
             {selectedTab === "programador" && (
               <div className="projects_content">
+                <Menu />
+
                 <div className="project_card">
-                  <div className="card_image">
-                  </div>
+                  <div className="card_image"></div>
                   <div className="card_content">
                     <span>text</span>
                   </div>

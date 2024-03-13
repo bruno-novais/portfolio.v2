@@ -2,7 +2,9 @@
     --color-white: #D2D3E0;
     --color-grey: #cbccd8;
     --color-black: #060505;
-    --color-primary: #5769E9;
+    --color-primary: #ffa200;
     --color-secondary: #7D57E9;
-    --color-component: #D2D3E059;
+    --color-component: #292A35;
+    --color-border: #444556;
+    --color-icon: #858699;
 }

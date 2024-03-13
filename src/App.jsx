@@ -28,7 +28,7 @@ const theme = createTheme({
       main: '#ED4245'
     },
     primary: {
-      main: '#5769E9'
+      main: '#ffa200'
     },
     body: {
       main: '#1D1E2B'
@@ -36,6 +36,9 @@ const theme = createTheme({
     components: {
       main: '#292A35'
     },
+    icon: {
+      main: '#858699'
+    }
   },
   components: {
     MuiIconButton: {
