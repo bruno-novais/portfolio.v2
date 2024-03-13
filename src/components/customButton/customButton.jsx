@@ -1,8 +1,8 @@
 import "./customButton.css";
-const CustomButton = ({ href }) => {
+const CustomButton = ({ href, text }) => {
   return (
     <a className="custom_button" href={href}>
-      <span>See My Projects</span>
+      <span>{text}</span>
     </a>
   );
 };

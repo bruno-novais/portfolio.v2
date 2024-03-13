@@ -19,7 +19,7 @@ function TopNavbar() {
           </Tooltip>
 
           <Tooltip title="Projetos">
-            <IconButton href="#" color="white">
+            <IconButton href="#projects" color="white">
               <Devices weight="fill" />
             </IconButton>
           </Tooltip>

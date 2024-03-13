@@ -49,8 +49,8 @@ function About() {
                     onChange={handleChange}
                     aria-label="basic tabs example"
                   >
-                    <Tab className="teste" label="Educação" />
-                    <Tab className="teste" label="Experiências" />
+                    <Tab className="tab_label" label="Educação" />
+                    <Tab className="tab_label" label="Experiências" />
                   </Tabs>
                 </div>
                 <div className="topic_content">
@@ -89,7 +89,7 @@ function About() {
             </div>
 
             <div className="about_actions">
-              <CustomButton href="#home" />
+              <CustomButton text="Veja Meus Projetos" href="#projects" />
             </div>
           </div>
 

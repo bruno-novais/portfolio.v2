@@ -78,7 +78,7 @@
   order: -1;
 }
 
-.teste {
+.tab_label {
   color: var(--color-primary) !important;
   font-weight: bold !important;
 }
@@ -95,10 +95,10 @@
 
 .photo_section {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 100%;
   background: #d2d3e059;
-  background-image: url(../../assets/img/character.png);
+  /* background-image: url(../../../public/assets/img/character.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -163,6 +163,7 @@
   align-items: center;
   /* gap: 16px; */
   width: 100%;
+  font-size: 0.85rem;
 }
 
 .skill_topic {
@@ -178,5 +179,8 @@
 }
 
 .topic_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 8px;
 }

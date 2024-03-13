@@ -1,6 +1,7 @@
 import "./App.css";
 import Home from "./pages/home/home";
 import About from "./pages/about/about";
+import Projects from "./pages/projects/projects";
 import ScrollToTopButton from './components/scrollToTopButton/scrollToTopButton'; // Ajuste o caminho conforme necessário
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -76,6 +77,7 @@ function App() {
       <ScrollToTopButton />
       <Home />
       <About />
+      <Projects />
     </ThemeProvider>
   );
 }
