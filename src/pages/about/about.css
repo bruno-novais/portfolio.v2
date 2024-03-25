@@ -8,6 +8,8 @@
   background: var(--color-pastel);
   color: var(--color-black);
   overflow: hidden;
+  border-bottom: 2px solid var(--color-component);
+    box-shadow: 3px 3px var(--color-component);
 }
 
 .content_container {

@@ -3,6 +3,7 @@ import "./projects.css";
 import { CaretDown } from "@phosphor-icons/react";
 import { Chip, Box, IconButton, Tooltip, Grid } from "@mui/material";
 import Menu from "../../components/menu/menu";
+import ProjectCard from "../../components/projectCard/projectCard";
 
 function Projects() {
   const [selectedTab, setSelectedTab] = useState("programador");
@@ -31,23 +32,42 @@ function Projects() {
               onClick={() => handleChipClick("designer")}
             />
           </div>
-          <Box sx={{ height: "100vh" }}>
+          <Box sx={{ height: "100vh"}}>
             {selectedTab === "programador" && (
-              <Box >
+              <Box>
+              <div className="tab_header">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+              </div>
                 {/* <Menu /> */}
-                
-                <Grid container spacing={2}>
-                  <Grid xs={8}>
-                  <div className="card_grid">teste</div>
+
+                <Grid container spacing={3}>
+                  <Grid item xs={5}>
+                    <ProjectCard
+                      // imagePath="../../../public/assets/img/bg1.jpg"
+                      title="Title"
+                      text="Descrição"
+                    />
                   </Grid>
-                  <Grid xs={4}>
-                  <div className="card_grid">teste</div>
+                  <Grid item xs={3}>
+                    <ProjectCard
+                      // imagePath="../../../public/assets/img/bg1.jpg"
+                      title="Title"
+                      text="Descrição"
+                    />
                   </Grid>
-                  <Grid xs={4}>
-                  <div className="card_grid">teste</div>
+                  <Grid item xs={4}>
+                    <ProjectCard
+                      // imagePath="../../../public/assets/img/bg1.jpg"
+                      title="Title"
+                      text="Descrição"
+                    />
                   </Grid>
-                  <Grid xs={8}>
-                  <div className="card_grid">teste</div>
+                  <Grid item xs={8}>
+                    <ProjectCard
+                      // imagePath="../../../public/assets/img/bg1.jpg"
+                      title="Title"
+                      text="Descrição"
+                    />
                   </Grid>
                 </Grid>
               </Box>
