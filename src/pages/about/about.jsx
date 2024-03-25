@@ -48,9 +48,18 @@ function About() {
                     value={value}
                     onChange={handleChange}
                     aria-label="basic tabs example"
+                    indicatorColor="secondary"
+                    textColor="primary"
                   >
-                    <Tab className="tab_label" label="Educação" />
-                    <Tab className="tab_label" label="Experiências" />
+                    <Tab
+                      className="tab_label"
+                      label="Educação"
+
+                    />
+                    <Tab
+                      className="tab_label"
+                      label="Experiências"
+                    />
                   </Tabs>
                 </div>
                 <div className="topic_content">

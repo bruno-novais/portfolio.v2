@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./pages/home/home";
 import About from "./pages/about/about";
 import Projects from "./pages/projects/projects";
-import ScrollToTopButton from './components/scrollToTopButton/scrollToTopButton'; // Ajuste o caminho conforme necessário
+import ScrollToTopButton from './components/scrollToTopButton/scrollToTopButton';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -28,7 +28,10 @@ const theme = createTheme({
       main: '#ED4245'
     },
     primary: {
-      main: '#ffa200'
+      main: '#00ccc0'
+    },
+    secondary: {
+      main: '#8793fd'
     },
     body: {
       main: '#1D1E2B'
@@ -45,7 +48,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           '&:hover': {
-            color: '#5769e9',
+            color: '#00ccc0',
           }
         },
       },
@@ -60,10 +63,15 @@ const theme = createTheme({
     MuiDivider: {
       styleOverrides: {
         root: {
-            backgroundColor: '#5768e9',
+            backgroundColor: '#8793fd',
         },
       },
     },
+    MuiTabs: {
+      styleOverrides: {
+        color: '#bebfca'
+      }
+    }
   },
   typography: {
     fontSize: 12,

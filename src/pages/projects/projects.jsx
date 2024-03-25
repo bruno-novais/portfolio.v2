@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import "./projects.css";
 import { CaretDown } from "@phosphor-icons/react";
-import { Chip, Box, IconButton, Tooltip } from "@mui/material";
+import { Chip, Box, IconButton, Tooltip, Grid } from "@mui/material";
 import Menu from "../../components/menu/menu";
 
 function Projects() {
@@ -18,7 +18,7 @@ function Projects() {
           <div className="projects_header">
             <Chip
               variant={selectedTab === "programador" ? "contained" : "outlined"}
-              label="Programador"
+              label="Desenvolvedor"
               clickable
               color={selectedTab === "programador" ? "primary" : "default"}
               onClick={() => handleChipClick("programador")}
@@ -33,16 +33,24 @@ function Projects() {
           </div>
           <Box sx={{ height: "100vh" }}>
             {selectedTab === "programador" && (
-              <div className="projects_content">
-                <Menu />
-
-                <div className="project_card">
-                  <div className="card_image"></div>
-                  <div className="card_content">
-                    <span>text</span>
-                  </div>
-                </div>
-              </div>
+              <Box >
+                {/* <Menu /> */}
+                
+                <Grid container spacing={2}>
+                  <Grid xs={8}>
+                  <div className="card_grid">teste</div>
+                  </Grid>
+                  <Grid xs={4}>
+                  <div className="card_grid">teste</div>
+                  </Grid>
+                  <Grid xs={4}>
+                  <div className="card_grid">teste</div>
+                  </Grid>
+                  <Grid xs={8}>
+                  <div className="card_grid">teste</div>
+                  </Grid>
+                </Grid>
+              </Box>
             )}
             {selectedTab === "designer" && (
               <div className="projects_content">
