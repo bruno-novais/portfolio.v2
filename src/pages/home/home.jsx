@@ -76,7 +76,7 @@ function Home() {
         </div>
 
         <div className="title" id="title">
-          <TypeIt
+          {/* <TypeIt
           options={{
             speed:  50,
             waitUntilVisible: true,
@@ -84,7 +84,7 @@ function Home() {
         >
           Hi, I'm <SuperStrong>Bruno Novais</SuperStrong>👋!<br/>
           Seja Bem-Vindo ao meu Portifólio
-        </TypeIt>
+        </TypeIt> */}
         </div>
 
         <div className="art"></div>

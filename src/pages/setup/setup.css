@@ -1,0 +1,26 @@
+@import "../../App.css";
+
+.setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 32px;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  gap: 8px;
+}
+
+#setup_art canvas {
+  width: 100% !important;
+  height:fit-content !important;
+  background: red;
+  position: absolute;
+}

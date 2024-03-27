@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./pages/home/home";
 import About from "./pages/about/about";
 import Projects from "./pages/projects/projects";
+import Setup from "./pages/setup/setup";
 import ScrollToTopButton from './components/scrollToTopButton/scrollToTopButton';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -89,6 +90,7 @@ function App() {
       <Home />
       <About />
       <Projects />
+      <Setup />
     </ThemeProvider>
   );
 }
